@@ -7,6 +7,8 @@ config.DATABASE_URL = 'bolt://neo4j:1234@localhost:7687'  # default
 
 app = Flask(__name__)
 
+CORS(app)
+
 
 class Product(StructuredNode):
     description = StringProperty()
