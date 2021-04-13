@@ -1,16 +1,15 @@
 # A simple and good recommender using Neo4j as DB
 
-
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm start-api`
+### `yarn start-api`
 
 Runs the api in Flask in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
