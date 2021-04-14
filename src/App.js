@@ -1,16 +1,22 @@
-import React from "react";
-import "./App.css";
-import Row from "./Row";
-import request from "./request";
-import Banner from "./Banner";
+import React, { Fragment } from "react";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Users from "./Users";
+import User from "./User";
+import Error from "./Error";
+import { Navbar } from "./Navbar";
 
 function App() {
 	return (
-		<div className="App">
-			{/* Nav */}
-			<Banner />
-			<Row title="Users" fetchUrl={request.fetchUsers} isUser />
-		</div>
+		<HashRouter basename="/">
+			<Fragment>
+				<Navbar />
+				<Switch>
+					<Route exact path="/" component={Users} />
+					<Route exact path="/user/:id" component={User} />
+					<Route component={Error} />
+				</Switch>
+			</Fragment>
+		</HashRouter>
 	);
 }
 

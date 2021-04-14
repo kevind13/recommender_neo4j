@@ -2,11 +2,12 @@ import React from "react";
 import "./User.css";
 import Row from "./Row";
 import request from "./request";
+import Banner from "./Banner";
 
 function User() {
 	return (
-		<div className="App">
-			<h1>User information 🔬 </h1>
+		<div className="User">
+			<Banner />
 			<Row title="Purchased products" fetchUrl={request.fetchProducts} />
 			<Row
 				title="Recommended products"
