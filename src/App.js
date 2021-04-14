@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Users from "./Users";
 import User from "./User";
-import Error from "./Error";
-import { Navbar } from "./Navbar";
+import Error from "./components/Error";
+import { Navbar } from "./components/Navbar";
 
 function App() {
 	return (

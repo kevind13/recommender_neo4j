@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "./axios";
+import axios from "../axios";
 import "./Row.css";
 
 function Row({ title, fetchUrl, isUser }) {
@@ -13,6 +13,7 @@ function Row({ title, fetchUrl, isUser }) {
 		}
 		fetchData();
 	}, [fetchUrl]);
+
 	return (
 		<div className="row">
 			<h2>{title}</h2>

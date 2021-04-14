@@ -1,8 +1,8 @@
 import React from "react";
 import "./User.css";
-import Row from "./Row";
+import Row from "./components/Row";
 import request from "./request";
-import Banner from "./Banner";
+import Banner from "./components/Banner";
 
 function User() {
 	return (
