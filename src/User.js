@@ -4,14 +4,18 @@ import Row from "./components/Row";
 import request from "./request";
 import Banner from "./components/Banner";
 
-function User() {
+function User(props) {
+	const id = props.match.params.id;
 	return (
 		<div className="User">
 			<Banner />
-			<Row title="Purchased products" fetchUrl={request.fetchProducts} />
+			<Row
+				title="Purchased products"
+				fetchUrl={`${request.fetchProducts}${id}`}
+			/>
 			<Row
 				title="Recommended products"
-				fetchUrl={request.fetchRecommendations}
+				fetchUrl={`${request.fetchRecommendations}${id}`}
 			/>
 		</div>
 	);

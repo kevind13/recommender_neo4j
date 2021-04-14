@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import axios from "../axios";
 import "./Row.css";
 
@@ -20,12 +21,17 @@ function Row({ title, fetchUrl, isUser }) {
 
 			<div className="row__names">
 				{values.map((item) => (
-					<p
-						className="row__name"
+					<div
+						className={`row__nameProduct ${isUser && "row__name"}`}
 						key={isUser ? item.id : item.product}
 					>
-						{isUser ? item.id : item.product}
-					</p>
+						<p>{isUser ? item.id : item.product}</p>
+						{isUser && (
+							<Link to={`/user/${item.id}`} className="row__link">
+								Go
+							</Link>
+						)}
+					</div>
 				))}
 			</div>
 		</div>

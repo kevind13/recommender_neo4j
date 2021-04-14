@@ -1,5 +1,6 @@
 .row {
     margin-left: 20px;
+    margin-right: 20px;
 }
 .row__names{
     display: flex;
@@ -15,10 +16,31 @@
     object-fit : contain;
     width : auto;
     height : 50px;
-    margin-right : 30px;
+    margin-right : 50px;
     transition : transform 450ms;
 }
-
+.row__nameProduct {
+    object-fit : contain;
+    width : auto;
+    max-height : 100px;
+    margin-right : 30px;
+    font-size : 0.6rem;
+    transition : transform 450ms;
+}
 .row__name:hover{
-    transform: scale(2)
+    transform: scale(1.5)
+}
+
+.row__link {
+    color: rgb(95, 28, 205);
+    text-decoration: none;
+    font-size : 0.8rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover {
+    color: rgb(95, 28, 205);
 }
