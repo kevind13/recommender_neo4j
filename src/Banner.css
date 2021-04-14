@@ -1,0 +1,23 @@
+.banner{
+    color: rgb(95, 28, 205);
+    object-fit :contain;
+    height: 419px;
+}
+
+.banner__contents{
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 180px;
+}
+
+.banner__title{
+    font-size : 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner__description{
+    font-size : 1rem;
+    color: black;
+
+}
