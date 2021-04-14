@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-
+import axios from "./axios";
 function Row({ title, fetchUrl }) {
 	const [values, setValues] = useState([]);
 
 	useEffect(() => {
 		async function fetchData() {
-			const res = await fetch(`http://localhost:5000/users`);
-			console.log(res);
+			const res = await axios.get(fetchUrl);
+			console.log(res.data);
 			return res;
 		}
 		fetchData();
