@@ -1,19 +1,32 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
-function Row({ title, fetchUrl }) {
+import "./Row.css";
+
+function Row({ title, fetchUrl, isUser }) {
 	const [values, setValues] = useState([]);
 
 	useEffect(() => {
 		async function fetchData() {
 			const res = await axios.get(fetchUrl);
-			console.log(res.data);
+			setValues(res.data);
 			return res;
 		}
 		fetchData();
-	}, []);
+	}, [fetchUrl]);
 	return (
-		<div>
-			<h2>Row</h2>
+		<div className="row">
+			<h2>{title}</h2>
+
+			<div className="row__names">
+				{values.map((item) => (
+					<p
+						className="row__name"
+						key={isUser ? item.id : item.product}
+					>
+						{isUser ? item.id : item.product}
+					</p>
+				))}
+			</div>
 		</div>
 	);
 }

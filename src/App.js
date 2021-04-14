@@ -2,11 +2,14 @@ import React from "react";
 import "./App.css";
 import Row from "./Row";
 import request from "./request";
+import Banner from "./Banner";
+
 function App() {
 	return (
 		<div className="App">
-			<h1>Best recommender 🚀 </h1>
-			<Row title="Users" fetchUrl={request.fetchUsers} />
+			{/* Nav */}
+			<Banner />
+			<Row title="Users" fetchUrl={request.fetchUsers} isUser />
 		</div>
 	);
 }
