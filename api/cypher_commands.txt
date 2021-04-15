@@ -1,3 +1,7 @@
+// 1000 rows https://git.io/JOmL7
+// 100 rows https://git.io/JOZZH
+
+
 // create constraint to customer id for all customer
 CREATE CONSTRAINT ON (user:User) ASSERT user.userID IS UNIQUE;
 

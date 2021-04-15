@@ -3,7 +3,8 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Users from "./Users";
 import User from "./User";
 import Error from "./components/Error";
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route exact path="/user/:id" component={User} />
 					<Route component={Error} />
 				</Switch>
+				<Footer />
 			</Fragment>
 		</HashRouter>
 	);

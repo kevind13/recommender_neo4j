@@ -1,7 +1,25 @@
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+    display : flex;
+    z-index: 1;
+    height: 55px;
+
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.navbar__black{
+    background-color : #111;
+
+}
 .navbar__name{
     color: rgb(95, 28, 205);
     text-decoration: none;
     font-size : 2rem;
     font-weight: 800;
+    margin-left: 15px;
     padding-top: 0.3rem;
 }
+
