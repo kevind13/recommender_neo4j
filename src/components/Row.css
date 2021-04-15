@@ -1,12 +1,15 @@
 .row {
     margin-left: 20px;
     margin-right: 20px;
+    max-height: 500px;
 }
 .row__names{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
+    height: auto;
+
 }
 
 .row__names::-webkit-scrollbar{
@@ -15,32 +18,41 @@
 .row__name {
     object-fit : contain;
     width : auto;
-    height : 50px;
-    margin-right : 50px;
+    height: auto;
+    margin-right: 80px;
     transition : transform 450ms;
+ 
+}
+.row__string{
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .row__nameProduct {
     object-fit : contain;
     width : auto;
     max-height : 100px;
-    margin-right : 30px;
+    margin-right: 50px;
     font-size : 0.6rem;
     transition : transform 450ms;
 }
 .row__name:hover{
-    transform: scale(1.5)
+    transform: scale(1.2)
 }
 
-.row__link {
-    color: rgb(95, 28, 205);
-    text-decoration: none;
-    font-size : 0.8rem;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row__title{
+    font-size : 2rem;
 }
+
 
 .link:hover {
     color: rgb(95, 28, 205);
+}
+
+.row__img{
+    object-fit: contain;
+    width : 150%;
+    max-height: 200px; 
+    justify-content: center;
+    align-items: center;
 }

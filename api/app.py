@@ -35,6 +35,7 @@ class User(StructuredNode):
 def get_users():
     users = [{'id': user.userID, 'country': user.country}
              for user in User.nodes]
+
     return jsonify(users)
 
 
