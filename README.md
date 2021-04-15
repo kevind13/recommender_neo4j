@@ -1,6 +1,18 @@
-# A simple and good recommender using Neo4j as DB
+# A simple and good recommender using Neo4j as DB 🔍
 
-## Available Scripts
+## First steps
+
+Install all dependencies in the project directory with the command:
+
+### `npm install`
+
+Go to the `API` folder which contains the backend and create a new python enviroment then run:
+
+### `[sudo] pip install -r requirements.txt
+
+You must have Neo4j installed and run it on your machine, create a database and fill it with the instructions found in `\api\cypher_commands.txt`
+
+## Running
 
 In the project directory, you can run:
 
@@ -9,15 +21,15 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Also run:
+
 ### `yarn start-api`
 
 Runs the api in Flask in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This depend on your machine, sometimes you have to change the way it is executed in the `package.json` file by modifying the direction of the Script.
+or just go to API directory and run `python app.py`
 
 ### `npm run build`
 
