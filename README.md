@@ -8,7 +8,7 @@ Install all dependencies in the project directory with the command:
 
 Go to the `API` folder which contains the backend and create a new python enviroment then run:
 
-### `[sudo] pip install -r requirements.txt
+### `[sudo] pip install -r requirements.txt`
 
 You must have Neo4j installed and run it on your machine, create a database and fill it with the instructions found in `\api\cypher_commands.txt`
 
