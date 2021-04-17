@@ -6,17 +6,24 @@ Install all dependencies in the project directory with the command:
 
 ### `npm install`
 
-Go to the `API` folder which contains the backend and create a new python enviroment then run:
+Go to the API folder which contains the backend and create a new python enviroment then run:
 
-### `[sudo] pip install -r requirements.txt`
+### `[sudo] pip install -r requirement.txt
 
-You must have Neo4j installed and run it on your machine, create a database and fill it with the instructions found in `\api\cypher_commands.txt`
+You must have neo4j installed on your machine and have a database created.
+The information of the database must be added in the file `/api/run_queries.py` in the variables user and password. Then run:
+
+### python3 run_queries.py
+
+When the file finishes running, there will be a schema in the database as follows:
+
+![DB Scheme](https://git.io/JO8z5)
 
 ## Running
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
