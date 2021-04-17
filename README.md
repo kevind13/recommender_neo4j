@@ -8,7 +8,7 @@ Install all dependencies in the project directory with the command:
 
 Go to the API folder which contains the backend and create a new python enviroment then run:
 
-### `[sudo] pip install -r requirement.txt
+### `[sudo] pip install -r requirement.txt`
 
 You must have neo4j installed on your machine and have a database created.
 The information of the database must be added in the file `/api/run_queries.py` in the variables user and password. Then run:
@@ -17,7 +17,7 @@ The information of the database must be added in the file `/api/run_queries.py` 
 
 When the file finishes running, there will be a schema in the database as follows:
 
-![DB Scheme](https://git.io/JO8z5)
+![DB Scheme](https://raw.githubusercontent.com/kevind13/recommender_neo4j/master/img/schema.PNG)
 
 ## Running
 
